@@ -43,4 +43,14 @@ public class DaoCargo {
             return false;
         }
     }   
+    
+    public boolean consultar(){
+        try {
+            PreparedStatement ps = Conexao.getConexao().prepareStatement(SQL_CONSULTAR);
+            return true;
+        } catch (SQLException ex) {
+            Logger.getLogger(DaoCargo.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+    }
 }
