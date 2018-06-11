@@ -11,6 +11,7 @@ public class TelaCadastroCargo extends TelaCadastro implements Metodos {
     private DaoCargo daoCargo = new DaoCargo(cargo);
     private CampoInteiro codigo = new CampoInteiro("Codigo", true, false, 3, 99);
     private CampoTexto nome = new CampoTexto("Nome", true, true, 10, 99);
+    private CampoTexto nome1 = new CampoTexto("Nome", true, true, 10, 99);
 
     public TelaCadastroCargo(String titulo) {
         super(titulo);
