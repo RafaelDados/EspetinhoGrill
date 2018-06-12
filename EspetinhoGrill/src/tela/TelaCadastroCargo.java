@@ -18,7 +18,7 @@ public class TelaCadastroCargo extends TelaCadastro implements Metodos {
         habilitaComponente(false);
         pack();
     }
-
+    
     @Override
     public void adicionaCampos() {
         adicionaComponente(1, 1, 1, 1, codigo);
